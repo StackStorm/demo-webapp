@@ -1,0 +1,39 @@
+html
+  head
+    != newrelic.getBrowserTimingHeader()
+    title!= title
+  body
+    h1 StackStorm Demo Webapp
+
+    a(href="http://www.stackstorm.com" target="_blank")
+      img(src="/static/logo.png")
+
+    h2 Application Info
+
+    p Uptime:
+      b  #{uptime} seconds
+
+    h2 Host Info
+
+    p Hostname:
+      b  #{hostname}
+    p Platform:
+      b  #{platform}
+    p CPUs:
+      b  #{cpus}
+    p Load Average:
+      b  #{load_avg}
+    p Memory usage:
+      b  #{used_memory} MB / #{total_memory} MB
+
+   h2 Actions
+
+   p
+     a(href="/actions/restart").
+       Restart the server
+   p
+     a(href="/actions/shutdown").
+       Shutdown the server
+   p
+     a(href="/actions/simulate-load").
+      Simulate full core utilization

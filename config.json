@@ -1,0 +1,11 @@
+{
+  "listen": {
+    "host": "0.0.0.0",
+    "port": 8080
+  },
+  "new_relic": {
+    "app_name": "StackStorm Demo App",
+    "license_key": "",
+    "logging": "trace"
+  }
+}
