@@ -39,3 +39,7 @@ Causes the application to block and utilize the core on which it's running for
 ### GET /actions/error-response[?status_code=<code>]
 
 This endpoint returns a status code passed in the query string (defaults to ``500``).
+
+### GET /actions/simulate-errors[?path_name=<path name>&error_count=<error count>]
+
+Simulate ``error_count`` new relic errors events for the path named ``path_name``.
